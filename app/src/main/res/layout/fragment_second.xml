@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/value"
+        android:id="@+id/value_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,5 +19,16 @@
         android:textColor="@color/white"
         android:layout_marginTop="32dp"
         android:text="0" />
+
+    <Button
+        android:id="@+id/plus_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/value_two"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Button"
+        android:textSize="24sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

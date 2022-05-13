@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class FirstFragment extends Fragment {
@@ -23,7 +24,7 @@ private String sum ;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_first, container, false);
     }
 
@@ -32,21 +33,27 @@ private String sum ;
         super.onViewCreated(view, savedInstanceState);
     plus = view.findViewById(R.id.plus);
     count = view.findViewById(R.id.count);
+
+
     plus.setOnClickListener(new View.OnClickListener() {
+
+        private Object FirstFragment;
+
         @Override
         public void onClick(View view) {
-            //*if (sum == 10) {
                 Bundle bundle = new Bundle();
                 bundle.putString(KEY_FOR_BUNDLE, count.getText().toString());
-                //*bundle.putString(KEY_FOR_BUNDLE, sum);
+
                 SecondFragment secFragment= new SecondFragment();
                 secFragment.setArguments(bundle);
                 requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, secFragment).addToBackStack(null).commit();
 
-               
-                //*}else {
-                //*sum++;
                 count.setText(String.valueOf(sum));
+
+            if (count == null) 
+            
+                    Toast.makeText(<FirstFragment>, "Please long press the key", Toast.LENGTH_LONG ).show();
+
 
         }
     });

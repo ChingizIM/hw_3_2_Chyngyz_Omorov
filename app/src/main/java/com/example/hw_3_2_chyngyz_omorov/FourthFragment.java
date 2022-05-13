@@ -16,7 +16,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class SecondFragment extends Fragment {
+public class FourthFragment extends Fragment {
 
     private TextView value;
     public static final String KEY_FOR_BUNDLE = "key.String";
@@ -32,19 +32,19 @@ public class SecondFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false);
+        return inflater.inflate(R.layout.fragment_fourth, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        value = view.findViewById(R.id.value_two);
+        value = view.findViewById(R.id.value_fourth);
 
         if (getArguments()!=null) {
             String val = getArguments().getString(FirstFragment.KEY_FOR_BUNDLE);
             value.setText(String.valueOf(val));
         }
-        plus = view.findViewById(R.id.plus_two);
+        plus = view.findViewById(R.id.plus_fourth);
 
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,16 +52,12 @@ public class SecondFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putString(KEY_FOR_BUNDLE, value.getText().toString());
 
-                ThirdFragment thrFragment= new ThirdFragment();
-                thrFragment.setArguments(bundle);
-                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, thrFragment).addToBackStack(null).commit();
-
+                FifthFragment ffFragment= new FifthFragment();
+                ffFragment.setArguments(bundle);
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, ffFragment).addToBackStack(null).commit();
                 value.setText(String.valueOf(sum));
-
             }
         });
-
-
     }
 
     @Override

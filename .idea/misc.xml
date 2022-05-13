@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/hw_3_2_Chyngyz_Omorov/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/hw_3_2_Chyngyz_Omorov/app/src/main/res/layout/fragment_fifth.xml" value="0.22447916666666667" />
         <entry key="..\:/hw_3_2_Chyngyz_Omorov/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/hw_3_2_Chyngyz_Omorov/app/src/main/res/layout/fragment_fourth.xml" value="0.22447916666666667" />
         <entry key="..\:/hw_3_2_Chyngyz_Omorov/app/src/main/res/layout/fragment_second.xml" value="0.1" />
-        <entry key="..\:/hw_3_2_Chyngyz_Omorov/app/src/main/res/layout/fragment_third.xml" value="0.22447916666666667" />
+        <entry key="..\:/hw_3_2_Chyngyz_Omorov/app/src/main/res/layout/fragment_third.xml" value="0.1" />
+        <entry key="..\:/hw_3_2_Chyngyz_Omorov/app/src/main/res/layout/fragment_third2.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
