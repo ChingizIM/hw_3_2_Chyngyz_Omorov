@@ -50,9 +50,9 @@ private String sum ;
 
                 count.setText(String.valueOf(sum));
 
-            if (count == null) 
+            //if (count == null)
             
-                    Toast.makeText(<FirstFragment>, "Please long press the key", Toast.LENGTH_LONG ).show();
+                   // Toast.makeText(<FirstFragment>, "Please long press the key", Toast.LENGTH_LONG ).show();
 
 
         }
